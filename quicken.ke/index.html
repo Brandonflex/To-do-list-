@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickeKenya - Authentic African Cuisine </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">QuickeKenya</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#games">Kids Zone</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+
+
+            <h1>Welcome to QuickeKenya</h1>
+
+            <p>Experience the rich flavors and warm hospitality of authentic African cuisine in every bite</p>
+
+            <button onclick="scrollToMenu()">Explore Our Menu</button>
+
+
+        </section>
+
+        <section id="about">
+
+
+            <div class="section-title">
+                <h2>Our Story</h2>
+                <p>A journey of passion, flavor, and tradition</p>
+            </div>
+            
+            <div class="content-row">
+                <div class="content-text">
+                    <h3>Meet Flex Brandon</h3>
+                    <p>As the visionary founder and head chef of QuickeKenya, Flex Brandon brings his passion for authentic African cuisine to every dish. With over 15 years of culinary experience, he has mastered the art of traditional cooking methods while adding his own contemporary twist.</p>
+                    <p>His journey began in his grandmother's kitchen, where he learned the secrets of traditional African spices and cooking techniques. Today, he leads a team of talented chefs, creating unforgettable dining experiences that celebrate our rich culinary heritage.</p>
+                </div>
+
+
+                <div class="content-image">
+                    <img src="thumbnails/WhatsApp Image 2024-12-25 at 17.32.27_8ad49273.jpg" alt="Chef Flex Brandon">
+                </div>
+            </div>
+
+
+            <div class="content-row">
+
+                <div class="content-text">
+                    <h3>Our Restaurant</h3>
+                    <p>QuickeKenya is more than just a restaurant - it's a celebration of African culture and cuisine. Our warm, inviting space combines modern comfort with traditional African design elements, creating the perfect atmosphere for both casual dining and special occasions.</p>
+                    <p>Located in the heart of Nairobi, we've created a haven where families can gather, friends can connect, and everyone can experience the joy of authentic African flavors.</p>
+                </div>
+
+                <div class="content-image">
+                    <img src="thumbnails/Кафе.jpeg" alt="QuickeKenya Interior">
+                </div>
+
+
+            </div>
+            
+        </section>
+
+        <section id="menu">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+                <p>Discover our carefully crafted selection of authentic African dishes</p>
+            </div>
+            <div id="menu-items" class="menu-grid"></div>
+        </section>
+
+        <section id="recipes">
+            <div class="section-title">
+                <h2>Homemade Recipes</h2>
+                <p>Learn to cook your favorite African dishes at home</p>
+            </div>
+            <div class="content-row">
+                <div class="content-text">
+                    <h3>Traditional Pilau</h3>
+                    <p>A beloved Kenyan rice dish infused with aromatic spices and tender meat. Our step-by-step guide will help you recreate this classic dish in your own kitchen.</p>
+                    <button onclick="viewRecipe('pilau')">View Recipe</button>
+                </div>
+                <div class="content-image">
+                    <img src="thumbnails/Prawn Pilau - Desi by Pardesi.jpeg" alt="Traditional Pilau">
+                </div>
+            </div>
+
+
+            
+            <!-- Add more recipe rows -->
+
+        </section>
+
+        <section id="games" class="games-section">
+            <div class="section-title">
+                <h2>Kids Zone</h2>
+                <p>Fun and games while you wait for your meal</p>
+            </div>
+            <div class="game-container">
+                <h3>African Food Memory Game</h3>
+                <p>Match the pairs of traditional African dishes!</p>
+                <div id="memory-game" class="game"></div>
+                <button onclick="startMemoryGame()">Start New Game</button>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>Take a visual journey through our restaurant and cuisine</p>
+            </div>
+            <div class="content-row">
+                <div class="content-text">
+                    <h3>The QuickeKenya Experience</h3>
+                    <p>Step into our world of flavors, where every meal is crafted with care and served with a smile. Our restaurant combines modern comfort with traditional African aesthetics to create the perfect dining atmosphere.</p>
+                </div>
+                <div class="content-image">
+                    <img src="thumbnails/download.jpeg" alt="Restaurant Ambiance">
+                </div>
+            </div>
+            <!-- Add more gallery rows -->
+        </section>
+
+        <section id="reviews">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>What our guests say about their QuickeKenya experience</p>
+            </div>
+            <div id="reviews-container" class="reviews-container"></div>
+            <div class="text-center">
+                <button onclick="addReview()">Share Your Experience</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📞 Phone: +254 123 456 789</p>
+                <p>📧 Email: info@quickekenya.com</p>
+                <p>📍 Location: Nairobi, Kenya</p>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 11:00 AM - 11:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#menu">Menu</a></p>
+                <p><a href="#recipes">Recipes</a></p>
+                <p><a href="#reviews">Reviews</a></p>
+            </div>
+        </div>
+        <p class="copyright">© 2024 QuickeKenya. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
