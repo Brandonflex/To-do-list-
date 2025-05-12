@@ -1,10 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-import './styles/App.css';
+import './styles/Task.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const container = document.getElementById('root');
+if (!container) {
+  throw new Error("Root container not found. Make sure 'index.html' has a <div id='root'></div>.");
+}
 
+const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <App />
