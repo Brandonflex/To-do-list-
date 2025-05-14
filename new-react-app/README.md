@@ -16,11 +16,13 @@ Make sure you have the following installed:
 ### Installation
 
 1. Clone the repository:
+
    ```
    git clone <repository-url>
    ```
 
 2. Navigate to the project directory:
+
    ```
    cd new-react-app
    ```
@@ -33,6 +35,7 @@ Make sure you have the following installed:
 ### Running the Application
 
 To start the application, run the following command:
+
 ```
 npm start
 ```
@@ -42,6 +45,7 @@ This will start the development server and open the application in your default 
 ### Building for Production
 
 To create a production build of the application, run:
+
 ```
 npm run build
 ```
@@ -55,3 +59,5 @@ If you wish to contribute to this project, please fork the repository and submit
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+    (npm install react@latest react-dom@latest next@latest)
